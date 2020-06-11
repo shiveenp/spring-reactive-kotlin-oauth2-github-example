@@ -9,7 +9,7 @@ class Router {
 
     @Bean
     fun routes(handler: Handler) = coRouter {
-        "/ping".nest {
+        "/".nest {
             GET("", handler::hello)
         }
     }

@@ -6,4 +6,3 @@ spring:
           github:
             clientId: <add-github-client-id-here>
             clientSecret: <add-github-client-secret-here>
-

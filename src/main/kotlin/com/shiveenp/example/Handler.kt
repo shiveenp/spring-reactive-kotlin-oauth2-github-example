@@ -10,7 +10,7 @@ import org.springframework.web.reactive.function.server.bodyAndAwait
 @Component
 class Handler(val service: Service) {
 
-    suspend fun hello(req: ServerRequest): ServerResponse {
+    suspend fun getStarredRepos(req: ServerRequest): ServerResponse {
 
         return ok().bodyAndAwait(service.getUserStarredRepos())
     }

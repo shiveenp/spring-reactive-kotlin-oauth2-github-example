@@ -10,7 +10,7 @@ class Router {
     @Bean
     fun routes(handler: Handler) = coRouter {
         "/".nest {
-            GET("", handler::hello)
+            GET("", handler::getStarredRepos)
         }
     }
 }
